@@ -44,6 +44,36 @@
             </div>
         </section>
 
+        <section class="contact-form">
+            <div id="contactForm">
+                <h4>Leave your contacts and we will call you back</h4>
+                <form>
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label><br>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="comment">Comment</label><br>
+                        <textarea id="comment" name="comment" placeholder="Text input"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="privacy" name="privacy">
+                        <label for="privacy">I accept the terms and conditions of the <a href="#">Privacy
+                                Policy</a></label>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
         <section class="features-block">
             <div class="container">
                 <h2 class="visually-hidden">About Us</h2>
@@ -395,9 +425,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscribe">
+                <p class="footer-title">Subscribe</p>
+                <form class="footer-form" action="#" method="post">
+                    <input class="footer-input" type="email" name="email" placeholder="E-mail" required>
+                    <button class="footer-button" type="submit">Subscribe
+                        <svg class="icon-send" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
-    <div class="overlay"></div>
+
 </body>
 
 </html>
