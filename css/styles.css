@@ -553,7 +553,7 @@ a:focus {
 }
 
 .form-container {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .contact-form-label {
@@ -613,6 +613,10 @@ a:focus {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+}
+
+.checkbox-container {
+    margin-bottom: 24px;
 }
 
 .checkbox-label {
