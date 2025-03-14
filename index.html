@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js"></script>
     <title>Web Studio</title>
 </head>
 
@@ -41,64 +40,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button" type="button" onclick="showForm()">Order Service</button>
-            </div>
-        </section>
-
-        <section class="contact-form-block">
-            <div id="contactForm" class="contact-form-container">
-                <button class="close-button" type="button" onclick="hideForm()">
-                    <svg class="close-icon" width="8" height="8">
-                        <use href="./images/icons.svg#close-black-18dp"></use>
-                    </svg>
-                </button>
-                <p class="contact-form-title">Leave your contacts and we will call you back</p>
-                <form class="contact-form">
-                    <div class="form-container">
-                        <label for="name" class="contact-form-label">Name</label>
-                        <div class="input-block-container">
-                            <input type="text" id="name" name="name" class="contact-form-input">
-                            <svg class="contact-form-icon" width="18" height="24">
-                                <use href="./images/icons.svg#person-black"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <label for="phone" class="contact-form-label">Phone</label>
-                        <div class="input-block-container">
-                            <input type="tel" id="phone" name="phone" class="contact-form-input">
-                            <svg class="contact-form-icon" width="18" height="24">
-                                <use href="./images/icons.svg#phone-black"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <label for="email" class="contact-form-label">Email</label>
-                        <div class="input-block-container">
-                            <input type="email" id="email" name="email" class="contact-form-input">
-                            <svg class="contact-form-icon" width="18" height="24">
-                                <use href="./images/icons.svg#email-black"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="form-container">
-                        <label for="comment" class="contact-form-label">Comment</label>
-                        <textarea id="comment" name="comment" placeholder="Text input"
-                            class="contact-form-input contact-form-textarea"></textarea>
-                    </div>
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="privacy" name="privacy"
-                            class="contact-form-checkbox visually-hidden">
-                        <label for="privacy" class="checkbox-label">
-                            <span class="checkbox-span">
-                                <svg class="checkbox-icon" width="10" height="8">
-                                    <use href="./images/icons.svg#icon-check"></use>
-                                </svg> </span>
-                            I accept the terms and conditions of the <a href="#" class="checkbox-link">Privacy
-                                Policy</a></label>
-                    </div>
-                    <button type="submit" class="contact-form-button">Send</button>
-                </form>
+                <button class="hero-button" type="button">Order Service</button>
             </div>
         </section>
 
@@ -468,7 +410,63 @@
             </div>
         </div>
     </footer>
-    <div class="overlay"></div>
+
+    <div id="contactForm" class="contact-form-container is-open">
+        <div class="contact-form-modal">
+            <button class="close-button" type="button">
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#close-black-18dp"></use>
+                </svg>
+            </button>
+            <p class="contact-form-title">Leave your contacts and we will call you back</p>
+            <form class="contact-form">
+                <div class="form-container">
+                    <label for="name" class="contact-form-label">Name</label>
+                    <div class="input-block-container">
+                        <input type="text" id="name" name="name" class="contact-form-input">
+                        <svg class="contact-form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#person-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label for="phone" class="contact-form-label">Phone</label>
+                    <div class="input-block-container">
+                        <input type="tel" id="phone" name="phone" class="contact-form-input">
+                        <svg class="contact-form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label for="email" class="contact-form-label">Email</label>
+                    <div class="input-block-container">
+                        <input type="email" id="email" name="email" class="contact-form-input">
+                        <svg class="contact-form-icon" width="18" height="24">
+                            <use href="./images/icons.svg#email-black"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <label for="comment" class="contact-form-label">Comment</label>
+                    <textarea id="comment" name="comment" placeholder="Text input"
+                        class="contact-form-input contact-form-textarea"></textarea>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="privacy" name="privacy" class="contact-form-checkbox visually-hidden">
+                    <label for="privacy" class="checkbox-label">
+                        <span class="checkbox-span">
+                            <svg class="checkbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg> </span>
+                        I accept the terms and conditions of the <a href="#" class="checkbox-link">Privacy
+                            Policy</a></label>
+                </div>
+                <button type="submit" class="contact-form-button">Send</button>
+            </form>
+        </div>
+    </div>
+
 </body>
 
 </html>
