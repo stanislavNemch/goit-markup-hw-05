@@ -439,9 +439,14 @@ a:focus {
     padding-left: 16px;
     background-color: transparent;
     border: 1px solid white;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
     border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer-form input::placeholder {
+    color: #ffffff;
 }
 
 .footer-button {
