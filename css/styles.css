@@ -627,6 +627,10 @@ a:focus {
     color: rgba(46, 47, 66, 0.4);
 }
 
+.checkbox-container {
+    margin-bottom: 24px;
+}
+
 .checkbox-label {
     font-size: 12px;
     line-height: 1.17;
